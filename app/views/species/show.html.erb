@@ -1,3 +1,14 @@
 <h3><%= @species.name %></h3>
 
+<a href="/species/<%= @species.id %>/edit"><button>Edit</button></a>
+<a href="/species/<%= @species.id %>"
+  <button
+  data-confirm="You Sure?"
+  data-method="delete"
+  rel="nofollow">
+  Delete
+  </button>
+</a>
+<br />
+
 <a href="/species"><button>Main Menu</button></a>
